@@ -59,7 +59,7 @@
                     </div>
                     <div class="top-header-right">
                         <ul class="support">
-                            <li><a href="language?lang=vi">Tiếng Việt</a><a href="#">|</a> 
+                            <li><a href="language?lang=vi">Vietnamese</a><a href="#">|</a> 
                             <li><a href="language?lang=en">English</a>
                         </ul>        
                     </div>
