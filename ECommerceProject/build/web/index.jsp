@@ -80,6 +80,7 @@
                             <li><i class="glyphicon glyphicon-book" ></i><a href="register.html">Register</a></li>
                         </ul>
                     </div>
+<<<<<<< HEAD
                     <div class="header-right2">
 
                         <a href="checkout.html">
@@ -92,6 +93,13 @@
 
                         <div class="clearfix"> </div>
 
+=======
+                    <div class="top-header-right">
+                        <ul class="support">
+                            <li><a href="language?lang=vi">Tieng Viet</a><a href="#">|</a> 
+                            <li><a href="language?lang=en">Tieng Anh</a>
+                        </ul>        
+>>>>>>> origin/master
                     </div>
                     <div class="clearfix"> </div>
                 </div>
