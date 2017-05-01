@@ -63,6 +63,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
+<<<<<<< HEAD
 
     Map<String, String> map = (HashMap<String, String>) Settings.getSessionAttribute(request, "languageCode");
     UserSessionHolder ush = Settings.getCurrentUserSession(request);
@@ -73,6 +74,18 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (map == null) {
         request.getRequestDispatcher("language?lang=vi").forward(request, response);
     } else {
+=======
+
+    Map<String, String> map = (HashMap<String, String>) Settings.getSessionAttribute(request, "languageCode");
+    UserSessionHolder ush = Settings.getCurrentUserSession(request);
+
+    List<Product> products = ProductRepositoty.getAllProduct();
+    String cartSettings = "href=\"login.jsp\"";
+
+    if (map == null) {
+        request.getRequestDispatcher("language?lang=vi").forward(request, response);
+    } else {
+>>>>>>> origin/master
 
       out.write("\r\n");
       out.write("<html>\r\n");
@@ -135,7 +148,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            <li><i class=\"glyphicon glyphicon-book\" ></i><a href=\"register.html\">Register</a></li>\r\n");
       out.write("                        </ul>\r\n");
       out.write("                    </div>\r\n");
+<<<<<<< HEAD
       out.write("<<<<<<< HEAD\r\n");
+=======
+      out.write("\r\n");
+>>>>>>> origin/master
       out.write("                    <div class=\"header-right2\">\r\n");
       out.write("\r\n");
       out.write("                        <a href=\"checkout.html\">\r\n");
@@ -148,13 +165,21 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("                        <div class=\"clearfix\"> </div>\r\n");
       out.write("\r\n");
+<<<<<<< HEAD
       out.write("=======\r\n");
+=======
+      out.write("\r\n");
+>>>>>>> origin/master
       out.write("                    <div class=\"top-header-right\">\r\n");
       out.write("                        <ul class=\"support\">\r\n");
       out.write("                            <li><a href=\"language?lang=vi\">Tieng Viet</a><a href=\"#\">|</a> \r\n");
       out.write("                            <li><a href=\"language?lang=en\">Tieng Anh</a>\r\n");
       out.write("                        </ul>        \r\n");
+<<<<<<< HEAD
       out.write(">>>>>>> origin/master\r\n");
+=======
+      out.write("\r\n");
+>>>>>>> origin/master
       out.write("                    </div>\r\n");
       out.write("                    <div class=\"clearfix\"> </div>\r\n");
       out.write("                </div>\r\n");
@@ -335,6 +360,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <tbody>\r\n");
       out.write("\r\n");
       out.write("                            ");
+<<<<<<< HEAD
 
                                 List<Product> cartProduct = Settings.getCart(request).getProducts();
                                 for (Product product : cartProduct) {
@@ -343,6 +369,16 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                                             + "<td>" + map.get(product.getProductName()) + "</td>"
                                             + "<td>" + product.getProductPrice() + "</td></tr>");
                                 }
+=======
+
+                                List<Product> cartProduct = Settings.getCart(request).getProducts();
+                                for (Product product : cartProduct) {
+                                    out.print("<tr>"
+                                            + "<td>" + product.getProductId() + "</td>"
+                                            + "<td>" + map.get(product.getProductName()) + "</td>"
+                                            + "<td>" + product.getProductPrice() + "</td></tr>");
+                                }
+>>>>>>> origin/master
                             
       out.write("\r\n");
       out.write("                        </tbody>\r\n");
