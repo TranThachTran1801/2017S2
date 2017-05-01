@@ -63,6 +63,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
+<<<<<<< HEAD
 
     Map<String, String> map = (HashMap<String, String>) Settings.getSessionAttribute(request, "languageCode");
     UserSessionHolder ush = Settings.getCurrentUserSession(request);
@@ -73,6 +74,18 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (map == null) {
         request.getRequestDispatcher("language?lang=vi").forward(request, response);
     } else {
+=======
+
+    Map<String, String> map = (HashMap<String, String>) Settings.getSessionAttribute(request, "languageCode");
+    UserSessionHolder ush = Settings.getCurrentUserSession(request);
+
+    List<Product> products = ProductRepositoty.getAllProduct();
+    String cartSettings = "href=\"login.jsp\"";
+
+    if (map == null) {
+        request.getRequestDispatcher("language?lang=vi").forward(request, response);
+    } else {
+>>>>>>> origin/master
 
       out.write("\r\n");
       out.write("<html>\r\n");
@@ -168,6 +181,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</a></li>\r\n");
       out.write("                </ul>\r\n");
       out.write("                ");
+<<<<<<< HEAD
  } else {
                     String settings = "";
                     if (ush.getAccrole().equals(UserRole.ADMINISTRATOR)) {
@@ -181,6 +195,21 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                         cartSettings = "data-toggle=\"modal\" data-target=\"#myModal\"";
                     }
 
+=======
+ } else {
+                    String settings = "";
+                    if (ush.getAccrole().equals(UserRole.ADMINISTRATOR)) {
+                        settings = "admin.jsp";
+                        cartSettings = "data-toggle=\"modal\" data-target=\"#myModal\"";
+                    } else if (ush.getAccrole().equals(UserRole.CUSTOMER)) {
+                        settings = "account.jsp";
+                        cartSettings = "data-toggle=\"modal\" data-target=\"#myModal\"";
+                    } else if (ush.getAccrole().equals(UserRole.STAFF)) {
+                        settings = "staff.jsp";
+                        cartSettings = "data-toggle=\"modal\" data-target=\"#myModal\"";
+                    }
+
+>>>>>>> origin/master
                 
       out.write("\r\n");
       out.write("                <div class=\"account\"><a href=\"#\"><span></span>");
@@ -250,6 +279,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <tbody>\r\n");
       out.write("\r\n");
       out.write("                            ");
+<<<<<<< HEAD
 
                                 List<Product> cartProduct = Settings.getCart(request).getProducts();
                                 for (Product product : cartProduct) {
@@ -258,6 +288,16 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                                             + "<td>" + map.get(product.getProductName()) + "</td>"
                                             + "<td>" + product.getProductPrice() + "</td></tr>");
                                 }
+=======
+
+                                List<Product> cartProduct = Settings.getCart(request).getProducts();
+                                for (Product product : cartProduct) {
+                                    out.print("<tr>"
+                                            + "<td>" + product.getProductId() + "</td>"
+                                            + "<td>" + map.get(product.getProductName()) + "</td>"
+                                            + "<td>" + product.getProductPrice() + "</td></tr>");
+                                }
+>>>>>>> origin/master
                             
       out.write("\r\n");
       out.write("                        </tbody>\r\n");

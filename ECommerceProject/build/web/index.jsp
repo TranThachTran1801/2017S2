@@ -59,8 +59,13 @@
                     </div>
                     <div class="top-header-right">
                         <ul class="support">
+<<<<<<< HEAD
                             <li><a href="language?lang=vi">Tieng Viet</a><a href="#">|</a> 
                             <li><a href="language?lang=en">Tieng Anh</a>
+=======
+                            <li><a href="language?lang=vi">Vietnamese</a><a href="#">|</a> 
+                            <li><a href="language?lang=en">English</a>
+>>>>>>> origin/master
                         </ul>        
                     </div>
                 </div>

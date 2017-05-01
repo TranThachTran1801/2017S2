@@ -66,9 +66,9 @@
             <div class="container">
                 <div class="header-left animated wow fadeInLeft" data-wow-delay=".5s">
                     <ul>
-                        <li><i class="glyphicon glyphicon-headphones"></i><a href="#">24x7 live support</a></li>
+                        <li><i class="glyphicon glyphicon-headphones"></i><a href="#">24x6 live support</a></li>
                         <li><i class="glyphicon glyphicon-envelope" ></i><a href="mailto:info@example.com">@example.com</a></li>
-                        <li><i class="glyphicon glyphicon-earphone" ></i>+1234 567 892</li>
+                        <li><i class="glyphicon glyphicon-earphone" ></i>+84 09327297372</li>
 
                     </ul>
                 </div>
