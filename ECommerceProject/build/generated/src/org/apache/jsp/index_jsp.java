@@ -63,10 +63,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/master
 
     Map<String, String> map = (HashMap<String, String>) Settings.getSessionAttribute(request, "languageCode");
     UserSessionHolder ush = Settings.getCurrentUserSession(request);
@@ -77,21 +73,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (map == null) {
         request.getRequestDispatcher("language?lang=vi").forward(request, response);
     } else {
-<<<<<<< HEAD
-=======
-=======
-
-    Map<String, String> map = (HashMap<String, String>) Settings.getSessionAttribute(request, "languageCode");
-    UserSessionHolder ush = Settings.getCurrentUserSession(request);
-
-    List<Product> products = ProductRepositoty.getAllProduct();
-    String cartSettings = "href=\"login.jsp\"";
-
-    if (map == null) {
-        request.getRequestDispatcher("language?lang=vi").forward(request, response);
-    } else {
->>>>>>> origin/master
->>>>>>> origin/master
 
       out.write("\r\n");
       out.write("<html>\r\n");
@@ -113,7 +94,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <script src=\"js/jquery.min.js\"></script>\r\n");
       out.write("        <script type=\"text/javascript\" src=\"js/my-script.js\"></script>\r\n");
       out.write("        <script src=\"js/base-ajax.js\"></script>\r\n");
-<<<<<<< HEAD
       out.write("        <link href=\"css/bootstrap_1.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\r\n");
       out.write("        <link href=\"css/style_2.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\r\n");
       out.write("        <link href=\"css/animate.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\r\n");
@@ -155,6 +135,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            <li><i class=\"glyphicon glyphicon-book\" ></i><a href=\"register.html\">Register</a></li>\r\n");
       out.write("                        </ul>\r\n");
       out.write("                    </div>\r\n");
+      out.write("\r\n");
       out.write("                    <div class=\"header-right2\">\r\n");
       out.write("\r\n");
       out.write("                        <a href=\"checkout.html\">\r\n");
@@ -166,6 +147,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        </a>\r\n");
       out.write("\r\n");
       out.write("                        <div class=\"clearfix\"> </div>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("                    <div class=\"top-header-right\">\r\n");
+      out.write("                        <ul class=\"support\">\r\n");
+      out.write("                            <li><a href=\"language?lang=vi\">Tieng Viet</a><a href=\"#\">|</a> \r\n");
+      out.write("                            <li><a href=\"language?lang=en\">Tieng Anh</a>\r\n");
+      out.write("                        </ul>        \r\n");
       out.write("\r\n");
       out.write("                    </div>\r\n");
       out.write("                    <div class=\"clearfix\"> </div>\r\n");
@@ -310,143 +298,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </div>\r\n");
       out.write("    <!--END header-->    \r\n");
       out.write("\r\n");
-=======
-      out.write("    </head>\r\n");
-      out.write("    <body> \r\n");
-      out.write("        <!--header-->\r\n");
-      out.write("        <div class=\"header\">\r\n");
-      out.write("            <div class=\"top-header\">\r\n");
-      out.write("                <div class=\"container\">\r\n");
-      out.write("                    <div class=\"top-header-left\">\r\n");
-      out.write("                        <ul class=\"support\">\r\n");
-      out.write("                            <li><a href=\"error.jsp\"><label> </label></a></li>\r\n");
-      out.write("                            <li><a href=\"error.jsp\">");
-      out.print(map.get("live_support"));
-      out.write("<span class=\"live\"></span></a>\r\n");
-      out.write("                               \r\n");
-      out.write("                            </li>\r\n");
-      out.write("                        </ul>\r\n");
-      out.write("                        <ul class=\"support\">\r\n");
-      out.write("                            <li class=\"van\"><a href=\"error.jsp\"><label> </label></a></li>\r\n");
-      out.write("                            <li><a href=\"error.jsp\">");
-      out.print(map.get("shipping"));
-      out.write("<span class=\"live\"></span></a></li>\r\n");
-      out.write("                        </ul>\r\n");
-      out.write("                    </div>\r\n");
-      out.write("                    <div class=\"top-header-right\">\r\n");
-      out.write("                        <ul class=\"support\">\r\n");
-      out.write("                            <li><a href=\"language?lang=vi\">Vietnamese</a><a href=\"#\">|</a> \r\n");
-      out.write("                            <li><a href=\"language?lang=en\">English</a>\r\n");
-      out.write("                        </ul>        \r\n");
-      out.write("                    </div>\r\n");
-      out.write("                </div>\r\n");
-      out.write("                <!---->\r\n");
-      out.write("                <div class=\"clearfix\"> </div>\t\r\n");
-      out.write("            </div>\r\n");
-      out.write("            <div class=\"clearfix\"> </div>\t\t\r\n");
-      out.write("        </div>\r\n");
-      out.write("    </div>\r\n");
-      out.write("    <div class=\"bottom-header\">\r\n");
-      out.write("        <div class=\"container\">\r\n");
-      out.write("            <div class=\"col-sm-3 header-bottom-left\">\r\n");
-      out.write("                <div class=\"logo\">\r\n");
-      out.write("                    <a href=\"index.jsp\">E-<span>COMMERCE</span></a>\r\n");
-      out.write("                </div>\r\n");
-      out.write("                <div class=\"search\">\r\n");
-      out.write("                    <input type=\"text\" value=\"\" placeholder=\"");
-      out.print(map.get("place_holder"));
-      out.write("\" \r\n");
-      out.write("                           onfocus=\"this.value = '';\" \r\n");
-      out.write("                           onblur=\"if (this.value === '') {\r\n");
-      out.write("                                       this.value = '';\r\n");
-      out.write("                                   }\" >\r\n");
-      out.write("                    <input type=\"submit\"  value=\"");
-      out.print(map.get("search"));
-      out.write("\">\r\n");
-      out.write("\r\n");
-      out.write("                </div>\r\n");
-      out.write("                <div class=\"clearfix\"> </div>\r\n");
-      out.write("            </div>\r\n");
-      out.write("\r\n");
-      out.write("            <div class=\"col-sm-6 header-bottom-right\">\t\r\n");
-      out.write("\r\n");
-      out.write("                ");
- if (ush.getAccrole() == UserRole.GUEST) {
-      out.write("\r\n");
-      out.write("                <div class=\"account\"><a href=\"login.jsp\"><span></span>");
-      out.print(map.get("my_account"));
-      out.write("</a></div>\r\n");
-      out.write("                <ul class=\"login\">\r\n");
-      out.write("                    <li><a href=\"login.jsp\"><span> </span>");
-      out.print(map.get("login"));
-      out.write(" </a></li>\r\n");
-      out.write("                    <li><a data-toggle=\"modal\" data-target=\"#registerModal\">| ");
-      out.print(map.get("reg"));
-      out.write("</a></li>\r\n");
-      out.write("                </ul>\r\n");
-      out.write("                ");
-<<<<<<< HEAD
- } else {
-                    String settings = "";
-                    if (ush.getAccrole().equals(UserRole.ADMINISTRATOR)) {
-                        settings = "admin.jsp";
-                        cartSettings = "data-toggle=\"modal\" data-target=\"#myModal\"";
-                    } else if (ush.getAccrole().equals(UserRole.CUSTOMER)) {
-                        settings = "account.jsp";
-                        cartSettings = "data-toggle=\"modal\" data-target=\"#myModal\"";
-                    } else if (ush.getAccrole().equals(UserRole.STAFF)) {
-                        settings = "staff.jsp";
-                        cartSettings = "data-toggle=\"modal\" data-target=\"#myModal\"";
-                    }
-
-=======
- } else {
-                    String settings = "";
-                    if (ush.getAccrole().equals(UserRole.ADMINISTRATOR)) {
-                        settings = "admin.jsp";
-                        cartSettings = "data-toggle=\"modal\" data-target=\"#myModal\"";
-                    } else if (ush.getAccrole().equals(UserRole.CUSTOMER)) {
-                        settings = "account.jsp";
-                        cartSettings = "data-toggle=\"modal\" data-target=\"#myModal\"";
-                    } else if (ush.getAccrole().equals(UserRole.STAFF)) {
-                        settings = "staff.jsp";
-                        cartSettings = "data-toggle=\"modal\" data-target=\"#myModal\"";
-                    }
-
->>>>>>> origin/master
-                
-      out.write("\r\n");
-      out.write("                <div class=\"account\"><a href=\"#\"><span></span>");
-      out.print(map.get("account.welcome"));
-      out.print(ush.getAccname());
-      out.write("</a></div>\r\n");
-      out.write("                <ul class=\"login\">\r\n");
-      out.write("                    <li><a href=\"");
-      out.print(settings);
-      out.write("\"><span> </span>");
-      out.print(map.get("account.setting"));
-      out.write(" </a></li> \r\n");
-      out.write("                    <li><a href=\"logout\">| ");
-      out.print(map.get("logout"));
-      out.write(" </a></li>\r\n");
-      out.write("                </ul>\r\n");
-      out.write("                ");
-}
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("                <div class=\"cart\"><a ");
-      out.print(cartSettings);
-      out.write("><span> </span>");
-      out.print(map.get("cart"));
-      out.write("</a></div>\r\n");
-      out.write("                <div class=\"clearfix\"> </div>\r\n");
-      out.write("            </div>\r\n");
-      out.write("\r\n");
-      out.write("            <div class=\"clearfix\"> </div>\t\r\n");
-      out.write("        </div>\r\n");
-      out.write("    </div>\r\n");
-      out.write("</div>\r\n");
->>>>>>> origin/master
       out.write("\r\n");
       out.write("<div class=\"modal fade\" id=\"myModal\" role=\"dialog\">\r\n");
       out.write("    <div class=\"modal-dialog\">\r\n");
@@ -484,9 +335,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <tbody>\r\n");
       out.write("\r\n");
       out.write("                            ");
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
                                 List<Product> cartProduct = Settings.getCart(request).getProducts();
                                 for (Product product : cartProduct) {
@@ -495,20 +343,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                                             + "<td>" + map.get(product.getProductName()) + "</td>"
                                             + "<td>" + product.getProductPrice() + "</td></tr>");
                                 }
-=======
->>>>>>> origin/master
-
-                                List<Product> cartProduct = Settings.getCart(request).getProducts();
-                                for (Product product : cartProduct) {
-                                    out.print("<tr>"
-                                            + "<td>" + product.getProductId() + "</td>"
-                                            + "<td>" + map.get(product.getProductName()) + "</td>"
-                                            + "<td>" + product.getProductPrice() + "</td></tr>");
-                                }
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
->>>>>>> origin/master
                             
       out.write("\r\n");
       out.write("                        </tbody>\r\n");
