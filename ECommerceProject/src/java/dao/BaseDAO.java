@@ -31,8 +31,8 @@ public class BaseDAO {
     @Transaction
     private static Connection getConnection() throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection connection = DriverManager.getConnection(CONNECTION_POOL,
-                USERNAME, PASSWORD);
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/web",
+                "root", "1234");
 
         if (connection == null) {
             throw new ClassNotFoundException("DB not found!");

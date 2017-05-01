@@ -59,8 +59,8 @@
                     </div>
                     <div class="top-header-right">
                         <ul class="support">
-                            <li><a href="language?lang=vi">Vietnamese</a><a href="#">|</a> 
-                            <li><a href="language?lang=en">English</a>
+                            <li><a href="language?lang=vi">Tieng Viet</a><a href="#">|</a> 
+                            <li><a href="language?lang=en">Tieng Anh</a>
                         </ul>        
                     </div>
                 </div>
