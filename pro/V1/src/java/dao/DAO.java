@@ -604,6 +604,7 @@ public class DAO {
         return ans;
     }
     
+     //Tran-admin
     public ArrayList<order> getOrder1(int month, int year) {
         
         ArrayList<order> ans = new ArrayList<>();
@@ -642,6 +643,8 @@ public class DAO {
             e.printStackTrace();
         }
         return ans;
+        
+       ////Tran-admin
     }
     
     public ArrayList<order> getOrderID(int ID_oder) {

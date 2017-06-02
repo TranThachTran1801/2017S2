@@ -104,7 +104,7 @@
                                 </table>
                             </div>
                         </div>
-
+                                        <%--Tran-Account--%>
                         <div id="history" class="tab-pane fade">
                             <h3><%=languageMap.get("acc.history")%></h3>
 
@@ -145,7 +145,8 @@
                 </div>
             </div>
         </div>
-
+ <                          <%--Tran-Account--%>
+ 
         <div class="modal fade" id="changePassModal" role="dialog">
             <div class="modal-dialog">
 

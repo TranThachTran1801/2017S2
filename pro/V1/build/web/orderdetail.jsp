@@ -291,6 +291,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="clearfix"></div>
                    
                 </div>
+                        <%--Tran-account--%>
                 <div class="col-md-9 cart-items">
                     <h1>My Shopping Bag (<%=list.size()%>)</h1>
                     
@@ -339,6 +340,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="clearfix"> </div>
             </div>
         </div>
+                 <%--Tran-account--%>
+                 
         <div class="footer-grid">
             <div class="container">
                 <div class="col-md-2 re-ft-grd">
