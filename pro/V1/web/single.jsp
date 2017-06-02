@@ -67,6 +67,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!--default-js-->
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/base-ajax.js"></script>
+        <script src="js/jquery-ui.js"></script>
         <!--bootstrap-js-->
         <script src="js/bootstrap.min.js"></script>
         <!--script-->
@@ -171,7 +172,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     </div>
                                 </form>
                                 <script>
+                                        //jQuery UI Autocomplete
+                                        //attach autocomplete
                                     $('#autocomplete').autocomplete({
+                                        //define callback to format results
                                         source: [
                                     <%
                                         for (int j = 0; j < name.size(); ++j) {
