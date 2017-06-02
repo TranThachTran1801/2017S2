@@ -123,6 +123,7 @@
                                 </div>
                             </div>
                         </div>
+                                        <%--Tran-admin--%>
                         <div id="stats" class="tab-pane fade">
                             <h3><%=languageMap.get("admin.stats")%></h3>
                             <div>
@@ -155,6 +156,7 @@
 
                             </div>
                         </div>
+                            <%--Tran-admin--%>
                         <div id="profits" class="tab-pane fade">
                             <h3><%=languageMap.get("admin.profit")%></h3>
                             <div>

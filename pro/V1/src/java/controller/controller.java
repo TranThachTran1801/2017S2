@@ -119,6 +119,8 @@ public class controller extends HttpServlet {
                 session.setAttribute("order", ans);
                 response.sendRedirect("orderdetail.jsp");
             }
+            
+            // Tran-admin
             if(action.equals("get"))
             {
                 System.out.println(request.getParameter("month"));
@@ -128,6 +130,8 @@ public class controller extends HttpServlet {
                 session.setAttribute("orderList", order);
                 response.sendRedirect("statistic.jsp");
             }
+            // Tran-admin
+            
             if(action.equals("search"))
             {
                  System.out.println(request.getParameter("keyword"));
